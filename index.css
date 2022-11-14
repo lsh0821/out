@@ -8,16 +8,19 @@ a:link, a:visited {
 }
 
 /*첫페이지*/
-#wrap .section1 {
+.wrap .section1 {
     height: 100vh;
+    background-color: #f4e9d3;
 }
-.main {
-    width: 100%;
-    height: 100vh;
-    background-color: #dcd3cb;
+.section1_inner {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
     position: relative;
+    background-color: #f4e9d3;
 }
-.main p:nth-child(1) {
+
+.section1_inner p:nth-child(1) {
     position: absolute;
     z-index: 3;
     font-size: 85px;
@@ -25,188 +28,90 @@ a:link, a:visited {
     font-weight: 600;
     top: 365px;
     left: 100px;
+    color: #ea7414;
 }
-.main p:nth-child(2) {
+.section1_inner p:nth-child(2) {
     position: absolute;
     z-index: 3;
     font-size: 16px;
     letter-spacing: 2px;
     bottom: 135px;
     left: 100px;
+    color: #654200;
 }
-.main p:nth-child(3) {
+.section1_inner p:nth-child(3) {
     position: absolute;
     z-index: 3;
     font-size: 18px;
     bottom: 100px;
     left: 100px;
     font-weight: 400;
+    color: #654200;
    
 }
-.main p:nth-child(4) {
+.section1_inner p:nth-child(4) {
     position: absolute;
     z-index: 3;
     font-size: 15px;
     letter-spacing: 1px;
     bottom: 100px;
     right: 100px;
+    color: #654200;
 }
 
-/* 프로필 */
-#wrap .section2 {
-    width: 100%;
+/* 컨텐츠 */
+.section2 {
     height: 100vh;
-    background-color: white;
+    background-color: #fff7e7;
 }
-.section2 .section_wrap {
-    width: 1200px;
+.section2_inner {
+    width: 1100px;
     height: 100%;
     margin: auto;
+    position: relative;
+    background-color: #fff7e7;
 }
-.section2 .about {
-    width: 1200px;
-    height: 20%;
+.contents {
+    position: absolute;
+    z-index: 3;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    top: 280px;
+    right: 300px;
+    color: #ea7414;
 }
-.section2 .about h1 {
-    text-align: center;
-    font-size: 40px;
-    transform: translatey(100%);
+.publishing_box {
+    position: absolute;
+    z-index: 3;
+    top: 400px;
+    right: 387px;
+}
+.publishing_box li:first-child {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.publishing_box li {
+    font-size: 13px;
     letter-spacing: 1px;
+    padding-bottom: 8px;
+    color: #654200;
 }
 
-.section2 .page_wrap {
-    width: 1200px;
-    height: 80%;
-    display: flex;
-}
-.section2 .page1 {
-    width: 600px;
-    position: relative;
-}
-.section2 .page1 h3 {
+.design_box {
     position: absolute;
     z-index: 3;
-    top: 104px;
-    left: 310px;
-    font-size: 30px;
+    top: 400px;
+    right: 125px
 }
-.section2 .page1 img {
-    position: absolute;
-    z-index: 3;
-    left: 72px;
-    top: 58px;
-    width: 200px;
-}
-
-.section2 .page1 .profile {
-    width: 600px;
-    position: absolute;
-    z-index: 3;
-    top: 166px;
-    left: 310px;
-    /* background-color: aqua; */
-}
-
-.page1 .profile p {
-    text-align: left;
-    height: 30px;
-    line-height: 30px;
-    font-size: 17px;
-}
-
-.section2 .page2 {
-    width: 600px;
-    padding-left: 10px;
-}
-.section2 .page2 .experience {
-    width: 600px;
-    height: 33%;
-}
-.page2 .experience h3 {
-    text-align: left;
-    font-size: 23px;
+.design_box li:first-child {
+    font-size: 16px;
     padding-bottom: 15px;
-    padding-top:15px;
 }
-.page2 .experience p {
-    text-align: left;
-    height: 30px;
-    line-height: 30px;
+.design_box li {
     font-size: 13px;
-}
-
-.section2 .page2 .license {
-    width: 600px;
-    height: 26%;
-}
-.page2 .license h3 {
-    text-align: left;
-    font-size: 23px;
-    padding-bottom: 15px;
-}
-.page2 .license p {
-    text-align: left;
-    height: 30px;
-    line-height: 30px;
-    font-size: 13px;
-}
-
-.section2 .page2 .skills {
-    width: 600px;
-    height: 40%;
-}
-.page2 .skills h3 {
-    text-align: left;
-    font-size: 23px;
-    padding-bottom: 15px;
-}
-.page2 .skills ul {
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-.page2 .skills li:nth-child(1) {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 90px;
-}
-.page2 .skills li:nth-child(1) img {
-    width: 100%;
-}
-
-.page2 .skills li:nth-child(2) {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 116px;
-    width: 90px;
-}
-.page2 .skills li:nth-child(2) img {
-    width: 100%;
-}
-
-.page2 .skills li:nth-child(3) {
-    position: absolute;
-    z-index: 3;
-    top: -12px;
-    left: 233px;
-    width: 80px;
-}
-.page2 .skills li:nth-child(3) img {
-    width: 100%;
-}
-
-.page2 .skills li:nth-child(4) {
-    position: absolute;
-    z-index: 3;
-    top: -8px;
-    left: 335px;
-    width: 80px;
-}
-.page2 .skills li:nth-child(4) img {
-    width: 100%;
+    padding-bottom: 8px;
+    color: #654200;
 }
 
 
@@ -284,7 +189,12 @@ a:link, a:visited {
 .swiper-slide p:nth-child(3) {
     font-size: 13px;
     color: #555;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+}
+.swiper-slide p:nth-child(4) {
+    font-size: 13px;
+    color: #555;
+    padding-bottom: 23px;
 }
 
 .swiper-slide .btn {
@@ -313,11 +223,12 @@ a:link, a:visited {
 }
 
 .design_page {
-    width: 1200px;
+    width: 1100px;
+    margin: auto;
     
 }
 .design_page ul {
-    width: 1200px;
+    width: 1100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -329,6 +240,11 @@ a:link, a:visited {
     width: 28%;
     margin-bottom: 50px;
     display: inline-block;
+    
+}
+.design_page li a img {
+    width: 100%;
+    height: 100%;
 }
 .modal-notice1, .modal-notice2, .modal-notice3, .modal-notice4, .modal-notice5, .modal-notice6 {
     display: block;
@@ -346,12 +262,12 @@ a:link, a:visited {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     line-height: 350px;
     text-align: center;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .modal-notice1:hover .top{
     opacity: 1;
@@ -394,11 +310,7 @@ a:link, a:visited {
 } */
 
 
-.design_page li a img {
-    width: 100%;
-    height: 100%;
-   
-}
+
 
 .modal1, .modal2, .modal3, .modal4, .modal5, .modal6 {
     position: fixed;
@@ -413,18 +325,25 @@ a:link, a:visited {
 .modal-content {
     background-color: #fff;
     width: auto;
-    height: 90%;
+    height: 92%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 35px 20px 20px 20px;
+    padding: 35px;
     text-align: center;
     box-sizing: border-box;
 }
 .modal-content img {
-   height: 100%;
+    width: auto;
+    height: 100%;
+   
 }
+.modal-content img:first-child {
+    height: 100%;
+    border: 1px solid black;
+ }
+
 .btn-close {
     position: absolute;
     top: 7px;
@@ -440,7 +359,7 @@ a:link, a:visited {
 .section5_box {
     width: 100%;
     height: 150px;
-    background-color: #dcd3cb;
+    background-color: #f4e9d3;
 }
 .section5_text {
     padding-top: 65px;
@@ -448,6 +367,6 @@ a:link, a:visited {
 .section5_box p {
     font-size: 13px;
     text-align: center;
-    /* color: white; */
     font-weight: bold;
+    padding-bottom: 5px;
 }
