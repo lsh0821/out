@@ -9,13 +9,14 @@ a:link, a:visited {
 
 /*첫페이지*/
 .wrap .section1 {
+    width: 100%;
     height: 100vh;
     background-color: #f4e9d3;
 }
 .section1_inner {
-    width: 1200px;
+    width: 1400px;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     background-color: #f4e9d3;
 }
@@ -27,7 +28,7 @@ a:link, a:visited {
     letter-spacing: 5px;
     font-weight: 600;
     top: 365px;
-    left: 100px;
+    left: 120px;
     color: #ea7414;
 }
 .section1_inner p:nth-child(2) {
@@ -36,7 +37,7 @@ a:link, a:visited {
     font-size: 16px;
     letter-spacing: 2px;
     bottom: 135px;
-    left: 100px;
+    left: 120px;
     color: #654200;
 }
 .section1_inner p:nth-child(3) {
@@ -44,7 +45,7 @@ a:link, a:visited {
     z-index: 3;
     font-size: 18px;
     bottom: 100px;
-    left: 100px;
+    left: 120px;
     font-weight: 400;
     color: #654200;
    
@@ -65,7 +66,7 @@ a:link, a:visited {
     background-color: #fff7e7;
 }
 .section2_inner {
-    width: 1100px;
+    width: 1400px;
     height: 100%;
     margin: auto;
     position: relative;
@@ -78,14 +79,14 @@ a:link, a:visited {
     letter-spacing: 3px;
     font-weight: 600;
     top: 280px;
-    right: 300px;
+    right: 360px;
     color: #ea7414;
 }
 .publishing_box {
     position: absolute;
     z-index: 3;
     top: 400px;
-    right: 387px;
+    right: 430px;
 }
 .publishing_box li:first-child {
     font-size: 16px;
@@ -102,7 +103,7 @@ a:link, a:visited {
     position: absolute;
     z-index: 3;
     top: 400px;
-    right: 125px
+    right: 220px;
 }
 .design_box li:first-child {
     font-size: 16px;
@@ -361,21 +362,25 @@ a:link, a:visited {
 
 
 /* 마지막페이지 */
-#wrap .section5 {
-    width: 100%;
-} 
-
-.section5_box {
-    width: 100%;
-    height: 150px;
+.wrap .section5 {
+    height: 160px;
     background-color: #f4e9d3;
+} 
+.section5_inner {
+    width: 1400px;
+    height: 100%;
+    background-color: #f4e9d3;
+    margin: 0 auto;
 }
 .section5_text {
-    padding-top: 65px;
+   padding: 55px 0;
 }
-.section5_box p {
-    font-size: 13px;
+.section5_text p {
     text-align: center;
-    font-weight: bold;
-    padding-bottom: 5px;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: bold
+    
 }
+
