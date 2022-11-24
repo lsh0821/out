@@ -9,13 +9,11 @@ a:visited, a:link {
 
 .wrap {
     width: 100%;
-    /* background-color:beige; */
 }
 
 .wrap .header {
     width: 100%;
     height: 150px;
-    background-color: aquamarine;
     position: fixed;
     z-index: 20;
 }
@@ -76,6 +74,17 @@ a:visited, a:link {
     font-weight: 700;
     text-align: left;
 }
+.login li:last-child::before {
+    position: absolute;
+    z-index: 9;
+    content: "";
+    width: 20;
+    height: 20px;
+    top: 0;
+    right: 0;
+    background-color: black;
+}
+
 .shop {
     position: absolute;
     width: 100%;
@@ -198,11 +207,19 @@ a:visited, a:link {
     width: 100%;
     height: 800px;
 }
-
-.mainbanner img {
+.mainbanner_inner {
+    /* background: url(amuse/88adce117e4b495f92ba207c516a9f7a.png) no-repeat ; */
+    min-width: 1480px;
+    height: 100%;
+}
+    
+.mainbanner_inner img {
+    object-fit: fill;
     width: 100%;
     height: 100%;
 }
+
+
 
 .wrap .mainbanner2 {
     width: 100%;
@@ -482,15 +499,15 @@ a:visited, a:link {
 }
 
 .mainbanner4 .banner4frame {
-    width: 1200px;
+    min-width: 1480px;
     height: 500px;
-    /* background-color: #222; */
-    margin: auto;
+    background-color: #ffe3df;
+    margin: 0 auto;
     display: flex;
 }
 
 .mainbanner4 .mainbanner4_photo {
-    width: 600px;
+    width: 740px;
     height: 500px;
     /* background-color: red; */
     position: relative;
@@ -498,15 +515,16 @@ a:visited, a:link {
 }
 
 .mainbanner4 .mainbanner4_photo img {
-    width: 600px;
+    width: 610px;
     height: 340px;
     position: absolute;
-    left: 0;
-    top: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .mainbanner4 .mainbanner4_showroom {
-    width: 600px;
+    width: 740px;
     height: 500px;
     /* background-color: blue; */
     position: relative;
@@ -587,19 +605,19 @@ a:visited, a:link {
 }
 
 .footer .footerframe {
-    width: 1300px;
-    height: 220px;
-    /* background-color: red; */
-    margin: auto;
-    position: relative;
-    top: 40px;
+    min-width: 1480px;
+    height: 360px;
+    background-color: #fafafa;
+    margin: 20px 0 0 20px;
     display: flex;
 }
 
 .footer .footerinfo1 {
-    width: 460px;
+    width: 500px;
     height: 220px;
     position: relative;
+    top: 70px;
+    left: 100px;
 }
 .footerinfo1 .footerlogo {
     width: 150px;
@@ -654,10 +672,11 @@ a:visited, a:link {
 }
 
 .footer .footerinfo2 {
-    width: 420px;
+    width: 500px;
     height: 220px;
-    /* background-color: green ; */
     position: relative;
+    top: 70px;
+    left: 70px;
 }
 .footerinfo2 p:nth-child(1) {
     font-size: 18px;
@@ -690,10 +709,11 @@ a:visited, a:link {
 }
 
 .footer .footerinfo3 {
-    width: 420px;
+    width: 500px;
     height: 220px;
-    /* background-color: blue ; */
     position: relative;
+    top: 70px;
+    
 }
 .footerinfo3 ul {
     position: absolute;

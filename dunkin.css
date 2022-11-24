@@ -297,7 +297,7 @@ header .lnb li:hover .menu::before{
     display: block;
 }
 main{
-    width:100%;
+    min-width: 1480px;
     height: 590px;
     position: relative;
     margin-top:175px;
@@ -457,7 +457,7 @@ main img{
 }
 
 .banner{
-    width:100%;
+    min-width: 1480px;
     height: 400px;   
     background: url(dunkin/img_banner_1_1.jpg) fixed;
     margin-top:50px;
@@ -630,17 +630,15 @@ footer {
 }
 
 footer .inner {
-    width: 80%;
+    width: 1200px;
     height: 350px;
-    margin: auto;
+    margin: 0 auto;
     padding-top: 40px;
-    /* background-color: #b9b9b9; */
     display: flex;
 }
 
 .left_info {
     width: 35%;
-    /* background-color: #f9b234; */
 }
 .left_info .footerlogo {
     height: 75px;
